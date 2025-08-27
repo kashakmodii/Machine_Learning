@@ -62,3 +62,62 @@ Credit card fraud is a critical issue, with very few transactions being fraudule
 - **imbalanced-learn** (for SMOTE and imbalance handling)
 
 ---
+
+# Online Shoppers Purchasing Intention Prediction
+
+---
+
+This project applies **machine learning techniques** to predict whether users will complete a purchase during an online shopping session. By analyzing behavioral features such as time spent on product pages and traffic sources, the model aims to identify **high-purchase-intent sessions** that can help e-commerce platforms improve targeting and conversions.
+
+---
+
+## Dataset
+- **Name:** Online Shoppers Purchasing Intention Dataset  
+- **Download link**: [dataset (ZIP)](https://samatrix-data.s3.ap-south-1.amazonaws.com/ML/online_shoppers_intention.csv)
+- **Description:** Contains session-based features like:
+  - Administrative, Informational, and Product-related pages visited
+  - Bounce rate, Exit rate, Page values
+  - Special day indicators
+  - Traffic sources (Direct, Search, Referral, etc.)
+  - Target variable: **Revenue (purchase vs. no purchase)**
+
+---
+
+## Techniques Used
+- **Preprocessing**
+  - Feature Scaling → Standardization  
+  - Dimensionality Reduction → PCA  
+  - Class Balancing → SMOTE  
+
+- **Models Implemented**
+  - K-Nearest Neighbors (KNN) (Core Model)  
+  - Logistic Regression  
+  - Decision Trees  
+  - Random Forests  
+
+- **Concepts Explored**
+  - Bias-Variance Tradeoff  
+  - Curse of Dimensionality  
+  - Impact of Dimensionality Reduction  
+  - Effect of Data Balancing on Rare Events  
+
+---
+
+## Results & Insights
+- KNN was optimized and compared against other models for classification performance.  
+- Dimensionality reduction (PCA) improved training efficiency and mitigated the curse of dimensionality.  
+- SMOTE balancing significantly improved accuracy for predicting **rare purchase events**.  
+- The project demonstrated how machine learning can provide insights into:
+  - Customer engagement patterns  
+  - Personalized targeting strategies  
+  - Increasing conversion rates  
+
+---
+
+##  Conclusion
+This project highlights the power of machine learning in **digital commerce decision-making**. By leveraging session-based data and advanced ML techniques, e-commerce platforms can better understand customer behavior, identify high-purchase-intent sessions, and optimize marketing strategies to boost conversions.
+
+---
+
+
+
