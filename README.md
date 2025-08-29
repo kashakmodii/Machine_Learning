@@ -119,5 +119,90 @@ This project highlights the power of machine learning in **digital commerce deci
 
 ---
 
+---
+
+# Advertisement Budget Prediction
+
+---
+
+##  Project Overview
+It applies **machine learning regression techniques** to predict **sales revenue** based on advertising budget spent on different media platforms such as **TV, Radio, and Newspaper**.
+
+---
+
+##  Problem Statement
+Businesses often allocate advertising budgets across multiple channels but struggle to understand the **impact of each channel on sales**.  
+The goal of this project is to build predictive models that:  
+- Estimate sales revenue from given advertisement budgets  
+- Identify which advertisement medium contributes the most to sales  
+- Help businesses **optimize budget allocation** effectively  
+
+---
+
+##  Dataset Details
+- **Source**: Advertising dataset (commonly used for regression tasks)  
+- **Observations**: 200 entries  
+- **Features**:
+  - **TV**: Advertising budget spent on TV (in thousands of dollars)  
+  - **Radio**: Advertising budget spent on Radio (in thousands of dollars)  
+  - **Newspaper**: Advertising budget spent on Newspaper (in thousands of dollars)  
+- **Target**:
+  - **Sales**: Sales revenue generated (in thousands of units)  
+
+---
+
+##  Exploratory Data Analysis (EDA)
+- **Scatter plots** between Sales and each feature show a **strong positive correlation** with TV and Radio, but weaker with Newspaper.  
+- **Correlation heatmap** reveals:  
+  - TV & Radio have strong influence on Sales  
+  - Newspaper shows weak correlation  
+- Visualizations suggest **diminishing returns** for higher ad spending.  
+
+---
+
+### Preprocessing
+- Checked for **missing values** (none found)  
+- Scaled features where needed for regression models  
+- Split dataset into **training (80%)** and **testing (20%)**  
+
+---
+
+### Machine Learning Models Explored
+- **Simple Linear Regression** (using TV only)  
+- **Multiple Linear Regression** (TV, Radio, Newspaper)  
+- **Polynomial Regression**  
+- **Decision Tree Regressor**  
+- **Random Forest Regressor**
+
+---
+
+### Model Evaluation
+Models were evaluated using:  
+- **R² Score**  
+- **Mean Squared Error (MSE)**  
+- **Root Mean Squared Error (RMSE)**  
+
+Key outcomes:  
+- **Multiple Linear Regression** performed well with TV and Radio as strong predictors  
+- **Random Forest Regressor** provided the highest accuracy and lowest error  
+- **Newspaper feature** contributed little to prediction and could be dropped without significant loss  
+
+---
+
+##  Final Insights
+- **TV and Radio** budgets have the most significant impact on sales  
+- **Newspaper advertising** has minimal effect and can be deprioritized  
+- Best performing model: **Random Forest Regressor**  
+- Businesses should prioritize **TV and Radio investments** for maximum sales impact  
+
+---
+
+##  Technology Stack
+- **Python**  
+- **Pandas**, **NumPy**  
+- **scikit-learn**  
+- **Matplotlib**, **Seaborn**  
+
+---
 
 
