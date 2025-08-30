@@ -206,3 +206,101 @@ Key outcomes:
 ---
 
 
+
+#  Diabetes Prediction Project
+
+---
+
+##  Project Overview
+ It leverages machine learning techniques—especially **K-Nearest Neighbors (KNN)**—to classify patients as diabetic or non-diabetic using real-world health data.  
+The project covers the full pipeline: data cleaning, preprocessing, handling imbalance, modeling, and evaluation.
+
+---
+
+##  Problem Statement
+Diabetes is a major global health concern, and early detection is vital for timely intervention.  
+The aim of this project is to:
+- Predict whether a person is diabetic based on available health indicators
+- Handle class imbalance (fewer diabetic cases)
+- Prioritize **high recall** to minimize false negatives and avoid missing at-risk individuals
+
+---
+
+##  Dataset Details
+- **Download link**: [diabetes data (CSV)](https://samatrix-data.s3.ap-south-1.amazonaws.com/ML/diabetes-data.csv)  
+- **Observations**: 768 patient records  
+- **Features**:
+  - **Pregnancies**: Number of times pregnant  
+  - **Glucose**: Plasma glucose concentration  
+  - **BloodPressure**: Diastolic blood pressure (mm Hg)  
+  - **SkinThickness**: Triceps skinfold thickness (mm)  
+  - **Insulin**: 2-Hour serum insulin (mu U/ml)  
+  - **BMI**: Body mass index (weight in kg/(height in m)²)  
+  - **DiabetesPedigreeFunction**: Family history function score  
+  - **Age**: Patient’s age  
+- **Target**:
+  - **Outcome**: (0 = Non-diabetic, 1 = Diabetic)
+
+---
+
+##  Exploratory Data Analysis (EDA)
+- The dataset displayed **imbalanced class distribution** (more non-diabetic than diabetic patients).  
+- Several features—**Glucose**, **BloodPressure**, **SkinThickness**, **Insulin**, and **BMI**—had zero or implausible values.  
+- Correlation analysis identified **Glucose**, **BMI**, and **Age** as strong predictors of diabetes.  
+- Visualizations included:
+  - **Histograms** for understanding feature distributions  
+  - **Heatmaps** for correlation assessment  
+  - **Pair plots** to observe feature interactions
+
+---
+
+### Preprocessing
+- Replaced invalid zeros in medical attributes using **mean or median imputation**  
+- Applied **StandardScaler** for normalization of feature scales  
+- Split data into **80% training** and **20% testing** subsets  
+- Handled class imbalance using **SMOTE** (Synthetic Minority Over-sampling Technique)
+
+---
+
+### Machine Learning Models Explored
+- **K-Nearest Neighbors (KNN)** (primary model)
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- Support Vector Machine (SVM)  
+- Naive Bayes
+
+---
+
+### Model Evaluation
+Evaluation metrics used:
+- **Accuracy**  
+- **Precision**  
+- **Recall**  
+- **F1-score**  
+- **Confusion Matrix**
+
+Highlights:
+- **KNN** performed well when used with scaling and SMOTE  
+- **Random Forest** and **SVM** delivered strong predictive performance  
+- **Logistic Regression** offered interpretability of feature effects  
+- Emphasis was placed on **Recall** to ensure that diabetic cases are identified
+
+---
+
+##  Final Insights
+- Key predictors: **Glucose level**, **BMI**, and **Age**  
+- Best performing models: **Random Forest**, **SVM**, and **KNN** (with proper preprocessing)  
+- Main takeaway: In medical diagnosis tasks, **maximizing recall** is more critical than optimizing for accuracy to reduce the risk of missed diagnoses
+
+---
+
+##  Technology Stack
+- **Python**
+- **Pandas**, **NumPy**  
+- **scikit-learn**  
+- **Matplotlib**, **Seaborn**  
+- **imbalanced-learn** (SMOTE)
+
+---
+
