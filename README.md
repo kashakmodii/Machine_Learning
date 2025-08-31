@@ -119,8 +119,6 @@ This project highlights the power of machine learning in **digital commerce deci
 
 ---
 
----
-
 # Advertisement Budget Prediction
 
 ---
@@ -204,7 +202,6 @@ Key outcomes:
 - **Matplotlib**, **Seaborn**  
 
 ---
-
 
 
 #  Diabetes Prediction Project
