@@ -301,3 +301,93 @@ Highlights:
 
 ---
 
+---
+
+#  Bike Sharing Demand Prediction
+
+---
+
+##  Project Overview 
+It leverages **Linear Regression** to predict the demand for shared bikes based on historical data, applying data visualization, feature scaling, and model evaluation techniques.
+
+---
+
+##  Problem Statement
+The rapid growth of bike-sharing systems in urban areas creates a need for accurate **demand forecasting**.  
+The objective of this project is to analyze the dataset and build a regression model that predicts the number of bikes required, enabling better resource management and customer satisfaction.
+
+---
+
+##  Dataset Details
+- **Download link**: [Bike Sharing Dataset (ZIP)](https://samatrix-data.s3.ap-south-1.amazonaws.com/ML/Data-Bike-Share.zip)  
+- File used: **`day.csv`**  
+- The dataset contains **daily records** of bike rentals, weather, and seasonal information.  
+- Number of records: **731 days** (2011–2012)  
+- Features:
+  - **dteday**: Date
+  - **season**: 1 = Winter, 2 = Spring, 3 = Summer, 4 = Fall
+  - **yr**: Year (0 = 2011, 1 = 2012)
+  - **mnth**: Month (1–12)
+  - **holiday**: Whether the day is a holiday
+  - **weekday**: Day of the week
+  - **workingday**: If day is neither weekend nor holiday
+  - **weathersit**: Weather condition (1–4 categories)
+  - **temp**: Normalized temperature (0–1 scale)
+  - **atemp**: Normalized “feeling” temperature
+  - **hum**: Normalized humidity
+  - **windspeed**: Normalized windspeed
+  - **casual**: Count of casual users
+  - **registered**: Count of registered users
+  - **cnt**: Total rentals (**target variable**)
+
+---
+
+##  Exploratory Data Analysis (EDA)
+- Explored correlations between bike demand and weather/seasonal variables.  
+- Visualizations such as **heatmaps, bar charts, and trend lines** were used.  
+- Key insights:
+  - Demand is higher in **summer and fall**, lower in winter.  
+  - Rentals increase on **working days** with good weather.  
+  - Temperature has a strong positive effect on demand.  
+  - Humidity and windspeed negatively impact rentals.
+
+---
+
+### Preprocessing
+- Converted categorical variables (e.g., season, weather) using **Label Encoding**.  
+- Applied **StandardScaler** for continuous features like `temp`, `hum`, `windspeed`.  
+- Split data into **training (70%)** and **testing (30%)** sets.
+
+---
+
+### Machine Learning Model
+- Applied **Linear Regression** to predict `cnt` (total rentals).  
+
+---
+
+### Model Evaluation
+- Evaluated model performance with:
+  - **Mean Absolute Error (MAE)**
+  - **Root Mean Squared Error (RMSE)**
+  - **R² Score**
+- The regression model showed:
+  - **High R² score**, capturing strong relationship between predictors and demand.  
+  - **Low MAE and RMSE**, confirming reliable forecasting ability.  
+
+---
+
+##  Final Insights
+- Bike demand depends heavily on **season, weather, and temperature**.  
+- Linear Regression works effectively for this dataset and provides interpretable coefficients.  
+- This model can help bike-sharing companies **plan fleet sizes and optimize resources**.
+
+---
+
+##  Technology Stack
+- **Python**
+- **Pandas**, **NumPy**
+- **Matplotlib**, **Seaborn**
+- **scikit-learn** (Linear Regression, preprocessing, metrics)
+
+---
+
