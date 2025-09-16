@@ -54,5 +54,5 @@ This repository contains multiple machine learning projects, each addressing a r
 ## Technology Stack
 - **Python**  
 - **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, imbalanced-learn  
-
----
+- **Tool:** Google Colab/ Jupyter Notebook
+ ---
