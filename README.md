@@ -51,6 +51,14 @@ This repository contains multiple machine learning projects, each addressing a r
 
 ---
 
+## 6. Food Delivery – Customer Segmentation
+- **Goal:** Segment food delivery app users into meaningful groups for personalized marketing.  
+- **Dataset:** [Food Delivery Dataset](https://samatrix-data.s3.ap-south-1.amazonaws.com/ML/food_delivery.csv) (user demographics, spending habits, app usage, and order patterns).  
+- **Techniques:** Data preprocessing, scaling, PCA for dimensionality reduction, clustering (K-Means, Agglomerative, DBSCAN).  
+- **Models:** K-Means, Hierarchical Clustering, DBSCAN.  
+- **Key Insight:** PCA helped visualize distinct customer segments. Clusters revealed groups such as *young frequent users*, *older high spenders*, and *occasional low spenders*. These insights can drive personalized offers, loyalty programs, and better customer engagement.  
+
+
 ## Technology Stack
 - **Python**  
 - **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, imbalanced-learn  
