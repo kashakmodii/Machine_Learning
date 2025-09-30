@@ -58,9 +58,20 @@ This repository contains multiple machine learning projects, each addressing a r
 - **Models:** K-Means, Hierarchical Clustering, DBSCAN.  
 - **Key Insight:** PCA helped visualize distinct customer segments. Clusters revealed groups such as *young frequent users*, *older high spenders*, and *occasional low spenders*. These insights can drive personalized offers, loyalty programs, and better customer engagement.  
 
+---
+
+## 7. Health Insurance Cost Prediction
+- **Goal:** Predict individual medical charges using demographic and lifestyle data.  
+- **Dataset:** [Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) (`insurance.csv`, 1,338 records).  
+- **Techniques:** Feature engineering (encoding categorical variables, correlation analysis), multicollinearity check with **VIF**, regression analysis.  
+- **Model:** **Ordinary Least Squares (OLS) Regression**.  
+- **Key Insight:** Smoking, BMI, and Age are the strongest predictors of medical costs. Children and region have relatively minor effects. Multicollinearity was handled with VIF and correlation filtering.  
+
+---
 
 ## Technology Stack
 - **Python**  
-- **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, imbalanced-learn  
-- **Tool:** Google Colab
- ---
+- **Libraries:** Pandas, NumPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn, imbalanced-learn  
+- **Tool:** Google Colab  
+
+---
