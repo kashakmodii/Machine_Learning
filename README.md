@@ -69,6 +69,13 @@ This repository contains multiple machine learning projects, each addressing a r
 
 ---
 
+## 8. Iris Flower Classification
+- **Goal:** Classify iris flowers into three species (Setosa, Versicolor, Virginica) based on sepal and petal dimensions.  
+- **Dataset:** [Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris) (150 records, 4 features, 3 classes).  
+- **Techniques:** Scaling, train-test split, adding random noise to data, exploratory visualization, cross-validation (CV).  
+- **Models:** Logistic Regression, Decision Tree.  
+- **Key Insight:** Petal length and width are the most discriminative features. Logistic Regression and Decision Tree with cross-validation achieved high accuracy (>95%). Adding random noise helped evaluate model robustness.  
+
 ## Technology Stack
 - **Python**  
 - **Libraries:** Pandas, NumPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn, imbalanced-learn  
