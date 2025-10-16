@@ -76,9 +76,19 @@ This repository contains multiple machine learning projects, each addressing a r
 - **Models:** Logistic Regression, Decision Tree.  
 - **Key Insight:** Petal length and width are the most discriminative features. Logistic Regression and Decision Tree with cross-validation achieved high accuracy (>95%). Adding random noise helped evaluate model robustness.  
 
-## Technology Stack
-- **Python**  
-- **Libraries:** Pandas, NumPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn, imbalanced-learn  
-- **Tool:** Google Colab  
+---
+
+## 9. House Price Prediction
+- **Goal:** Predict the selling price of houses based on key features such as area, number of rooms, age, and distance from the city center.  
+- **Dataset:** Synthetic dataset of 10,000 records containing attributes — `square_feet`, `num_rooms`, `age`, `distance_to_city(km)`, and `price`.  
+- **Techniques:** Data cleaning (removing invalid/negative prices), exploratory data analysis (correlation heatmap, scatterplots), and feature scaling.  
+- **Models:** Linear Regression (baseline), Random Forest Regressor for improved accuracy.  
+- **Key Insight:**  
+  - **Square footage** and **number of rooms** were the most influential factors increasing house prices.  
+  - **Age** and **distance from city** negatively impacted price.  
+  - Random Forest outperformed Linear Regression with higher **R²** and lower **RMSE**, indicating better predictive power.  
+
+---
+
 
 ---
