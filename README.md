@@ -90,5 +90,14 @@ This repository contains multiple machine learning projects, each addressing a r
 
 ---
 
+## 10. Ridge & Lasso Regression
+- **Goal:** Understand the effect of regularization in regression and control overfitting by tuning the hyperparameter **λ (alpha)**.  
+- **Dataset:** Numerical regression dataset used to demonstrate the impact of regularization on model performance and coefficients.  
+- **Techniques:** Train-test split, feature scaling, and cross-validation for selecting the optimal alpha value.  
+- **Models:** Linear Regression (baseline), Ridge Regression, Lasso Regression.  
+- **Key Insight:**  
+  - Ridge Regression reduces overfitting by shrinking coefficients while keeping all features.  
+  - Lasso Regression performs feature selection by shrinking some coefficients to zero.  
+  - Cross-validation helps choose the best alpha value, improving model generalization and stability.  
 
 ---
