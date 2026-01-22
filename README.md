@@ -101,3 +101,16 @@ This repository contains multiple machine learning projects, each addressing a r
   - Cross-validation helps choose the best alpha value, improving model generalization and stability.  
 
 ---
+
+## 11. Heart Disease Prediction
+- **Goal:** Predict whether a person has heart disease based on medical attributes.  
+- **Dataset:** Heart disease dataset containing features such as age, sex, chest pain type, blood pressure, cholesterol, fasting blood sugar, ECG results, maximum heart rate, and exercise-induced angina.  
+- **Techniques:** Data preprocessing, train-test split, feature scaling, and exploratory data analysis.  
+- **Models:** Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree.  
+- **Key Insight:**  
+  - Medical features like chest pain type, maximum heart rate, and exercise-induced angina strongly influence prediction.  
+  - Logistic Regression and KNN provided reliable performance for binary classification.  
+  - Proper preprocessing and scaling improved model accuracy and stability.
+
+---
+
